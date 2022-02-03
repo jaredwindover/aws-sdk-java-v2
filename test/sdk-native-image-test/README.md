@@ -4,7 +4,16 @@
 This module contains a sample application using AWS SDK for Java 2.x, and it
 is used to test GraalVM Native Image compilation.
 
+## Prerequisites
+
+To run the tests, you need to have GraalVM and Native Image set up properly in your workspace.
+See [Setting up GraalVM with native-image support](https://graalvm.github.io/native-build-tools/latest/graalvm-setup.html)
+
 ## How to run
+
+You can run the tests by using the following commands. Note that you need to have
+[native-image](https://www.graalvm.org/22.0/reference-manual/native-image/) installed first.
+
 ```
 mvn clean install -pl :sdk-native-image-test -P quick --am
 
